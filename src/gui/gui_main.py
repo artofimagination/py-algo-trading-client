@@ -51,6 +51,7 @@ class MainWindow(QMainWindow):
         download_data_button.pressed.connect(self.worker.download)
         bot_selector_label = QLabel("Bot")
         self.bot_selector = QComboBox()
+        download_data_button.pressed.connect(self.worker.download)
         main_layout.addWidget(self.candles_historic_plot, 0, 0, 1, 4)
         main_layout.addWidget(bot_selector_label, 1, 0, 1, 1)
         main_layout.addWidget(self.bot_selector, 1, 1, 1, 1)
